@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Config and secrets
+standalone_config.yaml
+.env
+
+# Saves
+saves/
+
+# dfrotz compiled binary (Mac/Linux, built locally)
+bin/dfrotz
+
+# Frotz source (compiled from source on Mac/Linux)
+vendor/
+
+# Game files (don't commit personal game collections)
+games/*.z3
+games/*.z5
+games/*.z8
+games/*.zblorb
+games/*.dat
+
+# ...but ship the bundled default game so the module works out of the box
+!games/zork1.z3
+
+# IDE
+.vscode/
+.idea/

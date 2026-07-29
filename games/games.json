@@ -1,0 +1,11 @@
+{
+  "games": [
+    {
+      "key": "zork_i",
+      "name": "Zork I: The Great Underground Empire",
+      "description": "A treasure hunt in the Great Underground Empire. Collect the Twenty Treasures of Zork and place them in the trophy case.",
+      "file_path": "zork1.z3",
+      "hints": "Your goal is to collect all 20 treasures and return them to the trophy case in the living room of the white house. The mailbox at the start contains a leaflet."
+    }
+  ]
+}
