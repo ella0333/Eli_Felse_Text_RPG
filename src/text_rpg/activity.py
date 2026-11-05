@@ -27,6 +27,7 @@ except ImportError:
     class Activity:
         key = ""
         menu_label = ""
+        menu_group = ""
         requires = []
         requires_base = ""
         schemas = {}
@@ -87,8 +88,9 @@ def _extract_save_filename(save_result: str) -> str:
 
 class TextRPGActivity(Activity):
     key = "text_rpg"
-    menu_label = "Play a Text RPG"
-    requires_base = ">=0.2,<1"
+    menu_label = "Text Adventure"
+    menu_group = "Play a Video Game"
+    requires_base = ">=0.5,<1"
     isolate_context = True
     memory_mode = "game_batch"  # 3-msg merge extraction, no classifier
     memory_rules = (
@@ -131,8 +133,8 @@ class TextRPGActivity(Activity):
         names = [g.name for g in games[:3]]
         if names:
             listing = ", ".join(names)
-            return f"Play a Text RPG ({listing})"
-        return "Play a Text RPG"
+            return f"Text Adventure ({listing})"
+        return "Text Adventure"
 
     def get_status(self, ctx: ActivityContext) -> str:
         games = load_games_registry(MODULE_ROOT / "games")

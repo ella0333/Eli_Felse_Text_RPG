@@ -21,7 +21,10 @@ cd ../Eli_Felse_Base          # to Eli_Felse_Base
 elifelse run
 ```
 
-"Text RPG" will appear in the activity menu with Zork I ready to play.
+"Text Adventure" will appear under "Play a Video Game" in the activity menu, with
+Zork I ready to play.
+
+Requires base **0.5.0 or newer**.
 
 To add more games, place `.z3` / `.z5` / `.z8` files in `games/` and run:
 

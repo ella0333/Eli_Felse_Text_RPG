@@ -21,17 +21,19 @@ On Mac/Linux, also run `python setup_dfrotz.py` to install the Z-machine interpr
 On Windows, dfrotz is bundled in `bin/windows/` and works out of the box.
 
 Zork I is bundled and pre-registered, so the module is ready to use immediately.
-Run `elifelse run` and "Text RPG" will appear in the activity menu.
+Run `elifelse run` and "Text Adventure" will appear under "Play a Video Game" in the
+activity menu.
 
 The base framework auto-discovers modules in `data/modules/`. On next startup it will
 find `text_rpg/__init__.py`, read the `ACTIVITIES` list, and register `TextRPGActivity`.
 
 ## Menu structure
 
-The module creates a dynamic main-menu entry:
+The module creates a dynamic entry under the shared "Play a Video Game" main-menu
+line, alongside any other video game module you have installed:
 
 ```
-Play a Text RPG (Zork, Planetfall, Wishbringer)
+Text Adventure (Zork, Planetfall, Wishbringer)
 ```
 
 Up to 3 game names are shown in parentheses. If only one game is installed, it still
